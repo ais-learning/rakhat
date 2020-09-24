@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=250,height=360">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var tl = new TimelineMax({ repeat: 3, repeatDelay: 3});
+      // var tl = new TimelineMax();
+
+      tl.from("#schirm", 0.6, {autoAlpha: 1})
+        .to("#bg01", 0.6, {scale: 4, opacity: 0, ease: Power0.easeNone}, '+=1.2')
+        .to("#brown", 0.6, {opacity: 0}, '-=0.4')
+
+        .to("#bg02", 0.8, {opacity: 0}, '+=0.2')
+        .from("#corner01", 0.8, {opacity: 0, scale: 0.4}, '-=0.8')
+        .from("#corner02", 0.8, {opacity: 0, scale: 0.4}, '-=0.8')
+        .from("#corner03", 0.8, {opacity: 0, scale: 0.4}, '-=0.8')
+        .from("#txt01", 0.6, {opacity: 0, y: 20}, '-=0.2')
+        .from("#txt02", 0.6, {opacity: 0, y: 20}, '-=0.2')
+        .from("#btn", 0.6, {opacity: 0, scale: 0.8}, '-=0.2')
+
+        ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+
+      <div id="bg01" class="el">
+        <img src="bg01.jpg">
+      </div>
+      <div id="bg02" class="el">
+        <img src="bg02.jpg">
+      </div>
+      <div id="brown" class="el">
+      </div>
+      <div id="bg01" class="el">
+        <img src="bg01.png">
+      </div>
+      <div id="txt01" class="el">
+        <img src="txt01.png">
+      </div>
+      <div id="txt02" class="el">
+        <img src="txt02.png">
+      </div>
+      <div id="btn" class="el">
+        <img src="btn.png">
+      </div>
+      <div id="corner01" class="el">
+        <img src="corner01.png">
+      </div>
+      <div id="corner02" class="el">
+        <img src="corner02.png">
+      </div>
+      <div id="corner03" class="el">
+        <img src="corner03.png">
+      </div>
+
+
+      <div id="schirm"></div>     
+    </div>
+  </a>
+</body>
