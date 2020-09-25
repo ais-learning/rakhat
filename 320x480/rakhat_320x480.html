@@ -20,14 +20,16 @@
         .to("#bg01", 0.6, {scale: 4, opacity: 0, ease: Power0.easeNone}, '+=1.2')
         .to("#brown", 0.6, {opacity: 0}, '-=0.4')
 
-        .to("#bg02", 0.8, {opacity: 0}, '+=0.2')
+        .to("#bg02a", 0.8, {opacity: 0}, '+=0.2')
         .from("#corner01", 0.8, {opacity: 0, scale: 0.4}, '-=0.8')
+        .to("#bg02b", 0.8, {opacity: 0}, '-=0.4')
         .from("#corner02", 0.8, {opacity: 0, scale: 0.4}, '-=0.8')
+        .to("#bg02c", 0.8, {opacity: 0}, '-=0.4')
         .from("#corner03", 0.8, {opacity: 0, scale: 0.4}, '-=0.8')
         .from("#txt01", 0.6, {opacity: 0, y: 20}, '-=0.2')
         .from("#txt02", 0.6, {opacity: 0, y: 20}, '-=0.2')
         .from("#btn", 0.6, {opacity: 0, scale: 0.8}, '-=0.2')
-
+        .from("#glow", 1, {x: -500, ease: Power0.easeNone}, '+=0.05')
         ;
    });
   </script>
@@ -39,8 +41,14 @@
       <div id="bg01" class="el">
         <img src="bg01.jpg">
       </div>
-      <div id="bg02" class="el">
-        <img src="bg02.jpg">
+      <div id="bg02a" class="el">
+        <img src="pic01.jpg">
+      </div>
+      <div id="bg02b" class="el">
+        <img src="pic02.jpg">
+      </div>
+      <div id="bg02c" class="el">
+        <img src="pic03.jpg">
       </div>
       <div id="brown" class="el">
       </div>
@@ -55,6 +63,11 @@
       </div>
       <div id="btn" class="el">
         <img src="btn.png">
+      </div>
+      <div id="glowcont" class="el">
+        <div id="glow" class="el">
+          <img src="glow2.png">
+        </div>
       </div>
       <div id="corner01" class="el">
         <img src="corner01.png">

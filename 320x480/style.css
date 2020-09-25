@@ -59,21 +59,46 @@ img {
   width: 320px;
 }
 
-#txt01 {
-  width: 284px;
-  left: 18px;
-  top: 349px;
+/* .bg02 > img {
+  position: absolute;
+  width: 320px;
+  top: 0;
+  left: 0;
+} */
+
+#bg02a {
+  position: absolute;
+  width: 77px;
+  height: 133px;
+  left: 31px;
+  top: 94px;
+  /* overflow: hidden; */
+  /* background: red; */
 }
-#txt02 {
-  width: 253px;
-  left: 33px;
-  top: 383px;
+
+
+#bg02b {
+  position: absolute;
+  width: 120px;
+  height: 0px;
+  left: 48px;
+  top: 236px;
+  /* overflow: hidden; */
+  /* background: red; */
 }
-#btn {
-  width: 241px;
-  left: 39px;
-  top: 404px;
+
+
+#bg02c {
+  position: absolute;
+  width: 100px;
+  height: 81px;
+  left: 172px;
+  top: 237px;
+  /* overflow: hidden; */
+  /* background: red; */
 }
+
+
 
 #corner01 {
   width: 55px;
@@ -94,6 +119,50 @@ img {
   left: 177px;
   top: 240px;
   transform-origin: top left;
+}
+
+
+
+#txt01 {
+  width: 284px;
+  left: 18px;
+  top: 349px;
+}
+#txt02 {
+  width: 253px;
+  left: 33px;
+  top: 383px;
+}
+#btn {
+  width: 241px;
+  left: 39px;
+  top: 404px;
+}
+
+#glowcont {
+  width: 232px;
+  height: 32px;
+  left: 44px;
+  top: 409px;
+  border-radius: 5px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+/* #glow {
+  width: 107px;
+  height: 37px;
+  top: -2px;
+  left: 100%;
+  opacity: 70%;
+} */
+#glow {
+  width: 71px;
+  height: 37px;
+  top: -2px;
+  left: 100%;
+  opacity: 70%;
+  /* transform: rotate(-40deg); */
 }
 
 #schirm {
