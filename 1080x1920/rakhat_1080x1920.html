@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=1080,height=1920">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="easepack_2.0.1_min.js"></script>
+  <script src="tweenlite_2.0.1_min.js"></script>
+  <script src="cssplugin_2.0.1_min.js"></script>
+  <script src="timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      // var tl = new TimelineMax({ repeat: 3, repeatDelay: 3});
+      var tl = new TimelineMax();
+
+      tl.from("#schirm", 0.6, {autoAlpha: 1})
+        .to("#bg01", 0.6, {scale: 4, opacity: 0, ease: Power0.easeNone}, '+=0.6')
+        .to("#brown", 0.6, {opacity: 0}, '-=0.4')
+
+        .from("#corner01", 0.4, {opacity: 0, scale: 0.4}, '-=0.2')
+        .to("#pic01-cover", 0.6, {opacity: 0}, '-=0.3')
+        .from("#corner02", 0.4, {opacity: 0, scale: 0.4}, '-=0.2')
+        .to("#pic02-cover", 0.6, {opacity: 0}, '-=0.3')
+        .from("#corner03", 0.4, {opacity: 0, scale: 0.4}, '-=0.2')
+        .to("#pic03-cover", 0.6, {opacity: 0}, '-=0.3')
+        // .to("#bg02b", 0.6, {opacity: 0}, '-=0.4')
+        // .from("#corner02", 0.6, {opacity: 0, scale: 0.4}, '-=0.6')
+        // .to("#bg02c", 0.6, {opacity: 0}, '-=0.3')
+        // .from("#corner03", 0.6, {opacity: 0, scale: 0.4}, '-=0.6')
+        .from("#txt01", 0.6, {opacity: 0, y: 20}, '-=0.7')
+        .from("#txt02", 0.6, {opacity: 0, y: 20}, '-=0.2')
+        .from("#btn", 0.6, {opacity: 0, scale: 0.8}, '-=0.2')
+        .from("#glow", 0.5, {x: -500, ease: Power0.easeNone}, '-=0.5')
+        ;
+   });
+  </script>
+</head>
+<body>
+  <a href="%link1%" target="_blank">
+    <div class="container">
+      <div id="pics" class="el">
+        <div id="pic01" class="el">
+        </div>
+        <div id="pic02" class="el"></div>
+        <div id="pic03" class="el"></div>
+        <div id="pic04" class="el"></div>
+        <div id="pic05" class="el"></div>
+        <div id="pic06" class="el"></div>
+        <div id="pic01-cover" class="el"></div>
+        <div id="corner01" class="el"></div>
+        <div id="pic02-cover" class="el"></div>
+        <div id="corner02" class="el"></div>
+        <div id="pic03-cover" class="el"></div>
+        <div id="corner03" class="el"></div>
+      </div>
+      <div id="brown" class="el">
+      </div>
+      <div id="bg01" class="el">
+        <img src="bg01.svg">
+      </div>
+      <div id="txt01" class="el">
+        <img src="logo.svg">
+      </div>
+      <div id="txt02" class="el">
+        <img src="subline.svg">
+      </div>
+      <div id="btn" class="el">
+        <div id="grad" class="el"></div>
+        <div id="btn-text" class="el"><img src="btn.svg"></div>
+         <div id="glow" class="el">
+          <img src="glow2.png">
+        </div>       <!--  -->
+      </div>
+<!--       <div id="bg02a" class="el">
+        <img src="pic01.jpg">
+      </div>
+      <div id="bg02b" class="el">
+        <img src="pic02.jpg">
+      </div>
+      <div id="bg02c" class="el">
+        <img src="pic03.jpg">
+      </div> -->
+<!--       
+      <div id="bg01" class="el">
+        <img src="bg01.png">
+      </div> -->
+ <!--      
+
+      <div id="glowcont" class="el">
+
+      </div>
+      <div id="corner01" class="el">
+        <img src="corner01.png">
+      </div>
+      <div id="corner02" class="el">
+        <img src="corner02.png">
+      </div>
+      <div id="corner03" class="el">
+        <img src="corner03.png">
+      </div>
+ -->
+
+      <div id="schirm"></div>     
+    </div>
+  </a>
+</body>
